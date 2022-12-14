@@ -23,8 +23,8 @@ public class Book {
         }
 
         public Book(String bookName, int publicationYear) {
+            this.authorName = authorName;
             this.bookName = bookName;
-//        this.bookAuthor = authorName;
             this.publicationYear = publicationYear;
 
         }
