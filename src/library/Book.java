@@ -15,14 +15,10 @@ public class Book {
 
         @Override
         public String toString() {
-            return  authorName + ", " +
-                    "Book{" +
-                    "bookName='" + bookName + '\'' +
-                    ", publicationYear=" + publicationYear +
-                    '}';
+            return  "Название: " + bookName + " Год публикаций: " + publicationYear + " Автор: " + authorName.toString();
         }
 
-        public Book(String bookName, int publicationYear) {
+        public Book(String bookName, int publicationYear, Author authorName) {
             this.authorName = authorName;
             this.bookName = bookName;
             this.publicationYear = publicationYear;
